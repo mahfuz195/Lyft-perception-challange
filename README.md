@@ -7,7 +7,7 @@ From May 1, 2018 to June 3, 2018 Lyft arranged a percention challange for Udacit
 ![alt text](leader_board.png)
 
 ## Challenge Overview
-Your goal in this challenge is pixel-wise identification of objects in camera images. In other words, your task is to identify exactly what is in each pixel of an image! More specifically, you'll be identifying cars and the drivable area of the road. The images below are a simulated camera image on the left and a label image on the right, where each different type of object in the image corresponds to a different color.
+The goal in this challenge is pixel-wise identification of objects in camera images. In other words, the task is to identify exactly what is in each pixel of an image! More specifically, you need to identify cars and the drivable area of the road. The images below are a simulated camera image on the left and a label image on the right, where each different type of object in the image corresponds to a different color.
 <p>
     <img src="challange.png" alt>
     <em>Example of a simulated camera image (left) and pixel-wise labels of cars, road, lane markings, pedestrians, etc. (right) </em>
