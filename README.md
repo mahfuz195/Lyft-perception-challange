@@ -21,7 +21,7 @@ The given dataset by lyft contained 1000 images containing road and cars along w
 
 ... coming soon...
 
-## Data prepossing
+## Data Prepossing
 
 ... coming soon ...
 
@@ -29,15 +29,15 @@ The given dataset by lyft contained 1000 images containing road and cars along w
 
 ... coming soon ...
 
-## Framerate improvement
+## Framerate Improvement
 
 ... coming soon ...
 
-## Further improvement
+## Further Improvement
 
 ... coming soon ...
 
-## acknowledgement 
+## Acknowledgements
 
 ... coming soon ...
 
