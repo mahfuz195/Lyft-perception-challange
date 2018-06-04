@@ -12,18 +12,32 @@ The goal in this challenge is pixel-wise identification of objects in camera ima
     <img src="challange.png" alt>
     <em>Example of a simulated camera image (left) and pixel-wise labels of cars, road, lane markings, pedestrians, etc. (right) </em>
 </p>
+
 ## Dataset
+
 The given dataset by lyft contained 1000 images containing road and cars along with ground truth (segmented image) from CARLA autonomous vehicle simulator.
+
 ## Model Selection
+
 ... coming soon...
+
 ## Data prepossing
+
 ... coming soon ...
+
 ## Data Augmentation
+
 ... coming soon ...
+
 ## Framerate improvement
+
 ... coming soon ...
+
 ## Further improvement
+
 ... coming soon ...
+
 ## acknowledgement 
+
 ... coming soon ...
 
