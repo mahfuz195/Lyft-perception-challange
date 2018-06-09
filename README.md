@@ -15,7 +15,7 @@ The goal in this challenge is pixel-wise identification of objects in camera ima
 
 ## Dataset
 
-The given dataset by lyft contained 1000 images containing road and cars along with ground truth (segmented image) from CARLA autonomous vehicle simulator. 
+The given dataset by lyft contained 1000 images containing road and cars along with ground truth (segmented image) from CARLA autonomous vehicle simulator. Two students of Udacity gracefully donated more 2000 dataset. I used that dataset in training my model.
 
 ## Model Selection
 
@@ -76,7 +76,7 @@ def bottom_crop(x1):
 
 ## Data Augmentation
 
-... coming soon ...
+I used 3 data augmentation techniques to create more data. I used adding rain, snow and changed the brightness and contrast of the input images. That made the total data size of 3000+ (3000*3) = 12000 images. 
 
 ## Framerate Improvement
 
