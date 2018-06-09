@@ -76,11 +76,21 @@ def bottom_crop(x1):
 
 ## Data Augmentation
 
-I used 3 data augmentation techniques to create more data. I used adding rain, snow and changed the brightness and contrast of the input images. That made the total data size of 3000+ (3000*3) = 12000 images. 
+I used 3 data augmentation techniques to create more data. I used adding rain, snow and changed the brightness and contrast of the input images. That made the total data size of 3000+ (3000*3) = 12000 images.
 
 ## Framerate Improvement
 
-... coming soon ...
+I observed that the framerate grately depends on the input size to my model. Following results I got to check the dependency on input size of framerate:
+	15	0.018	89.5	1.7	8.333
+252x800	30				
+252x384	15	0.056	87.5	2	13.33
+
+
+| Input Size       | Tester Score           | Framerate  |
+| ------------- |:-------------:| -----:|
+| 252x800     | 89.5 | 8.33 |
+| 252x384      | 87.5      |   13.33 |
+| 288x544 | 88.8      |    9.345 |
 
 ## Lesson Learnt and Further Improvement
 
