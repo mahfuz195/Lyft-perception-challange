@@ -17,9 +17,13 @@ The goal of this challenge is the pixel-wise identification of objects in camera
 https://youtu.be/9O2eFzfZmsM
 https://youtu.be/RaPkdXwnmTA
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/9O2eFzfZmsM/0.jpg)](https://www.youtube.com/watch?v=9O2eFzfZmsM "Self Driving Car Output")
+| Regular Column | Long Column |
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/RaPkdXwnmTA/0.jpg)](https://www.youtube.com/watch?v=RaPkdXwnmTA "Self Driving Car Output")
+| [![IMAGE ALT TEXT](http://img.youtube.com/vi/9O2eFzfZmsM/0.jpg)](https://www.youtube.com/watch?v=9O2eFzfZmsM "Self Driving Car Output")
+ | [![IMAGE ALT TEXT](http://img.youtube.com/vi/RaPkdXwnmTA/0.jpg)](https://www.youtube.com/watch?v=RaPkdXwnmTA "Self Driving Car Output")
+ |
+
+
 
 
 ## Dataset
