@@ -6,6 +6,12 @@ From May 1, 2018, to June 3, 2018, Lyft arranged a perception challenge for Udac
 
 ![alt text](leader_board.png)
 
+## Test Video Output
+
+| Test Video | Segmented Video |
+| ------------- |:-------------:|
+| [![IMAGE ALT TEXT](http://img.youtube.com/vi/9O2eFzfZmsM/0.jpg)](https://www.youtube.com/watch?v=9O2eFzfZmsM "Self Driving Car Output") | [![IMAGE ALT TEXT](http://img.youtube.com/vi/RaPkdXwnmTA/0.jpg)](https://www.youtube.com/watch?v=RaPkdXwnmTA "Self Driving Car Output") |
+
 ## Challenge Overview
 The goal of this challenge is the pixel-wise identification of objects in camera images. In other words, the task is to identify exactly what is in each pixel of an image! More specifically, you need to identify cars and the drivable area of the road. The images below are a simulated camera image on the left and a label image on the right, where each different type of object in the image corresponds to a different color.
 <p>
@@ -95,12 +101,6 @@ Initially, my model was performing well with 87.5% average F score. But the fram
 After checking I selected the input size 288x544 for my model, as I produce a decent F-score and framerate close to 10.
 I also did coding optimization on the prediction pipeline as suggested by one of the Udacity Students: 1) Batch Prediction, 2) using different ``encode`` function. 
 
-
-## Test Video Output
-
-| Test Video | Segmented Video |
-| ------------- |:-------------:|
-| [![IMAGE ALT TEXT](http://img.youtube.com/vi/9O2eFzfZmsM/0.jpg)](https://www.youtube.com/watch?v=9O2eFzfZmsM "Self Driving Car Output") | [![IMAGE ALT TEXT](http://img.youtube.com/vi/RaPkdXwnmTA/0.jpg)](https://www.youtube.com/watch?v=RaPkdXwnmTA "Self Driving Car Output") |
 
 
 ## Lesson Learnt and Further Improvement
