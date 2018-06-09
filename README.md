@@ -27,14 +27,13 @@ The given ground dataset contained 12 classes and need to reduce it to 3 classes
 
 ```
 background_color = np.array([0, 0, 0])
-sideroad_color = np.array([0, 0, 10])
+car_color = np.array([0, 0, 10])
 road_color = np.array([0, 0, 7])
 road_color1 = np.array([0, 0, 6])
 
 gt_bg = np.all(gt_image == background_color, axis=2)
 gt_bg = gt_bg.reshape(*gt_bg.shape, 1)
-#gt_image = np.concatenate((gt_bg, np.invert(gt_bg)), axis=2)
-gt_sr = np.all(gt_image == sideroad_color, axis=2)
+gt_sr = np.all(gt_image == car_color, axis=2)
 gt_sr = gt_sr.reshape(*gt_sr.shape, 1)
 gt_r = np.all(gt_image == road_color, axis=2)
 gt_r = gt_r.reshape(*gt_r.shape, 1)
@@ -53,7 +52,26 @@ for c in range(13):
 gt_image = np.concatenate((gt_bg, gt_r, gt_sr), axis=2)
 ```
 
-The top part of the image is not necessary and was confusing the model prediction. So I removed top 248 pixels from the input and ground truth images. I also removed the bottom hood part from the ground truth images to have better accuracy on grading.
+The top and bottom part of the image was not necessary and was confusing the model prediction. So I removed top 248 pixels from the input and ground truth images. I also removed the bottom hood part from the ground truth images to have better accuracy on grading. Furtheremore, the hood was classified as Car, which I removed it in ```bottom_crop``` function as follows:
+```
+def top_crop(x1):
+    h , w , _ = x1.shape
+    top_crop = 352
+    x2 = x1[(h-top_crop):h,0:w,:]
+    return x2
+
+def bottom_crop(x1):
+    h , w , _ = x1.shape
+    offset = 110
+
+    idx , idy = np.where(x1[h-offset:h,0:w,2] == 10)
+    x1[idx+(h-offset),idy,:] = 0 
+    
+    offset = 64
+    x2 = x1[0:(h-offset),0:w,:] 
+    
+    return x2
+ ```   
 ... coming soon ...
 
 ## Data Augmentation
