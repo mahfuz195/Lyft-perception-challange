@@ -72,11 +72,14 @@ def bottom_crop(x1):
     
     return x2
  ```   
-... coming soon ...
 
 ## Data Augmentation
 
 I used 3 data augmentation techniques to create more data. I used adding rain, snow and changed the brightness and contrast of the input images. That made the total data size of 3000+ (3000*3) = 12000 images.
+
+This is the result of data prepossing and after data augmentation: 
+
+![alt text](data_augmentation.PNG)
 
 ## Framerate Improvement
 
