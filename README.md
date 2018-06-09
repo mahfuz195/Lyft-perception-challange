@@ -84,16 +84,28 @@ Initially, my model was performing well with 87.5% average F score. But the fram
 
 | Input Size       | Tester F-Score           | Framerate  |
 | ------------- |:-------------:| -----:|
-| 252x800     | 89.5 | 8.33 |
-| 252x384      | 87.5      |   13.33 |
-| 288x544 | 88.8      |    9.345 |
+| 252x800x3     | 89.5 | 8.33 |
+| 252x384x3      | 87.5      |   13.33 |
+| 288x544x3 | 88.8      |    9.345 |
 
 After checking I selected the input size 288x544 for my model, as I produce a decent F-score and framerate close to 10.
 I also did coding optimization on the prediction pipeline as suggested by one of the Udacity Students: 1) Batch Prediction, 2) using different ``encode`` function. 
 
 ## Lesson Learnt and Further Improvement
 
-It was fun to
+It was a fun project for me to learn new stuff in deep learning. But I wish I would know and use following techniques to get a better score in the competition:
+
+1. Use better augmentation techniques like roatation, flipping, Noise addition etc, Toppers in this competition used these techniques to improve their socre. 
+
+2. Use TensorRT for the netwrok optimization and faster prediction. 
+
+3. Use Carla software to produce more data for training. I only used the total 3000 images given by Lyft and Students. 
+
+4. Use Tensorboard the get more inside knowledge the model.
+
+### Personal Note
+
+I just have finished my Term 1 in Udacity self-driving Nano-degree program and have a little experience in deep learning. When I see the Lyft challenge, I wanted to participate only to learn. Before the challenge, I had zero knowledge about image segmentation. I worked with Keras before but wanted to learn tensor flow. So, I took it as a challenge to push myself to learn tensorflow and improve my python efficiency. First, I started to read papers and study existing implementation of image segmentation and it was fascinating to me learning how image segmentation works. I worked hard and was able to produce a decent output by detecting cars and roads. The bottleneck of my implementation was low framerate, and I wish I knew about ‘tensorrt’ and optimization of neural networks before the competition. Though I was not in top 25, I feel happy that I have learned so much during this competition. And I wish to work in Lyft in Level 5 Autonomous vehicle team one day.  Happy Coding!!!
 
 ## Acknowledgements
 
