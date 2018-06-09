@@ -107,6 +107,7 @@ It was a fun project for me to learn new stuff in deep learning. But I wish I wo
 
 4. Use Tensorboard the get more inside knowledge the model.
 
+5. Use frozen model for prediction pipeline. 
 
 ## Personal Note
 
