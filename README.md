@@ -15,11 +15,12 @@ The goal in this challenge is pixel-wise identification of objects in camera ima
 
 ## Dataset
 
-The given dataset by lyft contained 1000 images containing road and cars along with ground truth (segmented image) from CARLA autonomous vehicle simulator.
+The given dataset by lyft contained 1000 images containing road and cars along with ground truth (segmented image) from CARLA autonomous vehicle simulator. 
 
 ## Model Selection
 
-I have used Fully Convolution Network (FCN-8) proposed by [Long et al.](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) and used pretrained VGG16 as an encoder. Upsampling layer followed by VGG16 encoder layer was used to segment for each pixel.   
+First I implemented the SegNet Architecture. But my model as not performing well and was giving a very low framerate and accuracy. I tried data augmentation, dropout, and regularization on SegNet. But still model was performing poorly. Then I realized that the model was too complicated and selected Fully Convolution Network (FCN) [Long et al.](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) as it is simpler model. I modified VGG16 pertained model to segment the cars and road using FCN-8 for this competition. I selected FCN-8 as it provides better accuracy compared to FCN-16 and FCN-32. I modified the output layers for 3 classes so that it predicts Cars, Roads, and None for rest of the classes. My model takes input (352, 800, 3) as the input image and outputs an image with the same size. 
+
 
 ## Data Prepossing
 
@@ -33,7 +34,7 @@ I have used Fully Convolution Network (FCN-8) proposed by [Long et al.](https://
 
 ... coming soon ...
 
-## Further Improvement
+## Lesson Learnt and Further Improvement
 
 ... coming soon ...
 
