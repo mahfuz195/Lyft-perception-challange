@@ -19,7 +19,7 @@ The given dataset by lyft contained 1000 images containing road and cars along w
 
 ## Model Selection
 
-... coming soon...
+I have used Fully Convolution Network (FCN-8) proposed by [Long et al.](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) and used pretrained VGG16 as an encoder. Upsampling layer followed by VGG16 encoder layer was used to segment for each pixel.   
 
 ## Data Prepossing
 
