@@ -109,5 +109,13 @@ I just have finished my Term 1 in Udacity self-driving Nano-degree program and h
 
 ## Acknowledgements
 
-... coming soon ...
+1. First I would like to Lyft for arranging this competition. I learnt a lot within this short period of time. 
+
+2. I took the base code from [ColinShow](https://github.com/ColinShaw/semantic-segmentation-project) github. 
+
+3. The post from [Ujjwal Saxena](https://medium.freecodecamp.org/image-augmentation-make-it-rain-make-it-snow-how-to-modify-a-photo-with-machine-learning-163c0cb3843f) on data augmentation helped me adding his techniques into this project.
+
+4. The Udacity students who donated additional dataset from Carla. Big THANKS to them !!! 
+
+
 
