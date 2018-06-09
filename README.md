@@ -13,12 +13,6 @@ The goal of this challenge is the pixel-wise identification of objects in camera
     <em>Example of a simulated camera image (left) and pixel-wise labels of cars, road, lane markings, pedestrians, etc. (right) </em>
 </p>
 
-## Test Video output
-
-| Test Video | Segmented Video |
-| ------------- |:-------------:|
-| [![IMAGE ALT TEXT](http://img.youtube.com/vi/9O2eFzfZmsM/0.jpg)](https://www.youtube.com/watch?v=9O2eFzfZmsM "Self Driving Car Output") | [![IMAGE ALT TEXT](http://img.youtube.com/vi/RaPkdXwnmTA/0.jpg)](https://www.youtube.com/watch?v=RaPkdXwnmTA "Self Driving Car Output") |
-
 ## Dataset
 
 The given dataset by Lyft was 1000 images containing road and cars along with ground truth (segmented image) from CARLA autonomous vehicle simulator. Two students of Udacity gracefully donated more 2000 dataset. I used that dataset in training my model.
@@ -100,6 +94,14 @@ Initially, my model was performing well with 87.5% average F score. But the fram
 
 After checking I selected the input size 288x544 for my model, as I produce a decent F-score and framerate close to 10.
 I also did coding optimization on the prediction pipeline as suggested by one of the Udacity Students: 1) Batch Prediction, 2) using different ``encode`` function. 
+
+
+## Test Video Output
+
+| Test Video | Segmented Video |
+| ------------- |:-------------:|
+| [![IMAGE ALT TEXT](http://img.youtube.com/vi/9O2eFzfZmsM/0.jpg)](https://www.youtube.com/watch?v=9O2eFzfZmsM "Self Driving Car Output") | [![IMAGE ALT TEXT](http://img.youtube.com/vi/RaPkdXwnmTA/0.jpg)](https://www.youtube.com/watch?v=RaPkdXwnmTA "Self Driving Car Output") |
+
 
 ## Lesson Learnt and Further Improvement
 
