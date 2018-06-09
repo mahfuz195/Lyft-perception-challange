@@ -80,21 +80,20 @@ I used 3 data augmentation techniques to create more data. I used adding rain, s
 
 ## Framerate Improvement
 
-I observed that the framerate grately depends on the input size to my model. Following results I got to check the dependency on input size of framerate:
-	15	0.018	89.5	1.7	8.333
-252x800	30				
-252x384	15	0.056	87.5	2	13.33
+Initially, my model was performing well with 87.5% average F score. But the framerate was very low ~1 fps. Then I changed my segmentation to feed multiple images for the prediction. That improved the framerate to ~5fps. Later I found that the fps can be improved by reducing the model to a smaller input image size. Following results I got to check the dependency of framerate on input size: 
 
-
-| Input Size       | Tester Score           | Framerate  |
+| Input Size       | Tester F-Score           | Framerate  |
 | ------------- |:-------------:| -----:|
 | 252x800     | 89.5 | 8.33 |
 | 252x384      | 87.5      |   13.33 |
 | 288x544 | 88.8      |    9.345 |
 
+After checking I selected the input size 288x544 for my model, as I produce a decent F-score and framerate close to 10.
+I also did coding optimization on the prediction pipeline as suggested by one of the Udacity Students: 1) Batch Prediction, 2) using different ``encode`` function. 
+
 ## Lesson Learnt and Further Improvement
 
-... coming soon ...
+It was fun to
 
 ## Acknowledgements
 
