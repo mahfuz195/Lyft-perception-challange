@@ -27,7 +27,7 @@ The given dataset by Lyft was 1000 images containing road and cars along with gr
 
 First I implemented the SegNet Architecture. But my model as not performing well and was giving a very low framerate and accuracy. I tried data augmentation, dropout, and regularization on SegNet. But still model was performing poorly. Then I realized that the model was too complicated and selected Fully Convolution Network (FCN) [Long et al.](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) as it is a simpler model. I modified VGG16 pertained model to segment the cars and road using FCN-8 for this competition. I selected FCN-8 as it provides better accuracy compared to FCN-16 and FCN-32. I modified the output layers for 3 classes so that it predicts Cars, Roads, and None for rest of the classes. My model takes input (352, 800, 3) as the input image and outputs an image with the same size. As the submission time was extended I got more time to work on improving my model. I reduced the input image size and go a better fps around 9.34. Currently, my model takes input (288, 544, 3) as input and later resized the output to fit into (600,800,3).
 
-## Data Prepossing
+## Data Preprocessing
 
 The given ground dataset contained 12 classes and need to reduce it to 3 classes (Cars, Roads, and None). I used the following code to preprocess the ground truth data from Red channel of the ground truth image. 
 
