@@ -103,7 +103,7 @@ It was a fun project for me to learn new stuff in deep learning. But I wish I wo
 
 4. Use Tensorboard the get more inside knowledge the model.
 
-### Personal Note
+## Personal Note
 
 I just have finished my Term 1 in Udacity self-driving Nano-degree program and have a little experience in deep learning. When I see the Lyft challenge, I wanted to participate only to learn. Before the challenge, I had zero knowledge about image segmentation. I worked with Keras before but wanted to learn tensor flow. So, I took it as a challenge to push myself to learn tensorflow and improve my python efficiency. First, I started to read papers and study existing implementation of image segmentation and it was fascinating to me learning how image segmentation works. I worked hard and was able to produce a decent output by detecting cars and roads. The bottleneck of my implementation was low framerate, and I wish I knew about ‘tensorrt’ and optimization of neural networks before the competition. Though I was not in top 25, I feel happy that I have learned so much during this competition. And I wish to work in Lyft in Level 5 Autonomous vehicle team one day.  Happy Coding!!!
 
