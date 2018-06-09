@@ -23,6 +23,37 @@ First I implemented the SegNet Architecture. But my model as not performing well
 
 ## Data Prepossing
 
+The given ground dataset contained 12 classes and need to reduce it to 3 classes (Cars, Roads, and None). I used the following code to preprocess the ground truth data from Red channel of the ground truth image. 
+
+```
+background_color = np.array([0, 0, 0])
+sideroad_color = np.array([0, 0, 10])
+road_color = np.array([0, 0, 7])
+road_color1 = np.array([0, 0, 6])
+
+gt_bg = np.all(gt_image == background_color, axis=2)
+gt_bg = gt_bg.reshape(*gt_bg.shape, 1)
+#gt_image = np.concatenate((gt_bg, np.invert(gt_bg)), axis=2)
+gt_sr = np.all(gt_image == sideroad_color, axis=2)
+gt_sr = gt_sr.reshape(*gt_sr.shape, 1)
+gt_r = np.all(gt_image == road_color, axis=2)
+gt_r = gt_r.reshape(*gt_r.shape, 1)
+gt_r1 = np.all(gt_image == road_color1, axis=2)
+gt_r1 = gt_r1.reshape(*gt_r1.shape, 1)
+gt_r |= gt_r1
+
+for c in range(13):
+    if (c==6 or c== 7 or c==10):
+        continue
+    bg = np.array([0, 0, c])
+    gt_bg_c = np.all(gt_image == bg, axis=2)
+    gt_bg_c = gt_bg_c.reshape(*gt_bg_c.shape, 1)
+    gt_bg |= gt_bg_c
+
+gt_image = np.concatenate((gt_bg, gt_r, gt_sr), axis=2)
+```
+
+The top part of the image is not necessary and was confusing the model prediction. So I removed top 248 pixels from the input and ground truth images. I also removed the bottom hood part from the ground truth images to have better accuracy on grading.
 ... coming soon ...
 
 ## Data Augmentation
