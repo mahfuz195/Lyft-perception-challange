@@ -117,7 +117,7 @@ It was a fun project for me to learn new stuff in deep learning. But I wish I wo
 
 5. Use frozen model for prediction pipeline. 
 
-6. Becasue of lack of time at the end, I could not train the model with larger epoch value. I used Clemson Palmetto Clusder GPU for training and It took almost 12hrs for epochs of 30. 
+6. Becasue of the shortage of time at the end, I could not train the model with larger epoch value. I used Clemson Palmetto Cluster with P100 GPU for training and It took almost 12hrs for epochs of 30. 
 
 ## Personal Note
 
