@@ -113,7 +113,7 @@ It was a fun project for me to learn new stuff in deep learning. But I wish I wo
 
 3. Use Carla software to produce more data for training. I only used the total 3000 images given by Lyft and Students. 
 
-4. Use Tensorboard the get more inside knowledge the model.
+4. Use Tensorboard the get more inside knowledge of the model.
 
 5. Use frozen model for prediction pipeline. 
 
